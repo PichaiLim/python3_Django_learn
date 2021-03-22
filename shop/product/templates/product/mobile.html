@@ -1,0 +1,25 @@
+{% extends 'product/base.html' %} {% block content %}
+<div class="row">
+  <div class="col-12 text-center">
+    <h1>Mobile</h1>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>product_name</th>
+        <th>product_pricet</th>
+        <th>product_detail</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for mb in allProduct %}
+      <tr>
+        <td>{{ mb.product_name }}</td>
+        <td>{{ mb.product_pricet}}</td>
+        <td>{{ mb.product_detail }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock content %}
